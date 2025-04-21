@@ -33,3 +33,27 @@ Install the server using Go:
 ```bash
  go install github.com/chenmingyong0423/mcp-ip-geo/cmd/mcp-ip-geo@latest
 ```
+# MCP Server Config
+- Local File
+
+```json
+{
+  "mcpServers": {
+    "mcp-ip-geo": {
+      "command": "/path/to/mcp-ip-geo"
+    }
+  }
+}
+```
+
+- `Remote mode`
+
+```json
+{
+  "mcpServers": {
+    "mcp-ip-geo": {
+      "url": "http://host:port/sse"
+    }
+  }
+}
+```

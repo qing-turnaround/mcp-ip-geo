@@ -34,3 +34,28 @@ go build -o mcp-ip-geo.exe .\cmd\mcp-ip-geo # Windows 系统
 ```bash
 go install github.com/chenmingyong0423/mcp-ip-geo/cmd/mcp-ip-geo@latest
 ```
+
+# MCP Server 配置就
+- 本地执行文件
+
+```json
+{
+  "mcpServers": {
+    "mcp-ip-geo": {
+      "command": "/path/to/mcp-ip-geo"
+    }
+  }
+}
+```
+
+- 远程连接
+
+```json
+{
+  "mcpServers": {
+    "mcp-ip-geo": {
+      "url": "http://host:port/sse"
+    }
+  }
+}
+```
