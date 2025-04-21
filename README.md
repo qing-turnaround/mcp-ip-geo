@@ -14,7 +14,7 @@
 ## Local mode
 ### Go Command
 ```bash
-go build -o mcp-ip-geo .\cmd\mcp-ip-geo
+go build -o mcp-ip-geo ./cmd/mcp-ip-geo
  
 go build -o mcp-ip-geo.exe .\cmd\mcp-ip-geo # windows
 ```
