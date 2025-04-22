@@ -3,40 +3,54 @@
 </h1>
 
 <div align="center">
-  <a href="./README.md">English</a>
+  <a href="./README-zh_CN.md">简体中文</a>
 </div>
 
 ---
 
-`mcp-ip-geo` 是一个 MCP 服务器，提供通过 ip-api.com 实现的 IP 地理位置查询功能（国家、地区、城市等信息）。
+`mcp-ip-geo` 是一个 MCP 服务器，基于 `ip-api.com` 提供 `IP` 地理位置查询服务（国家、省份、城市等）。
 
 # 从源码构建
-## 本地模式
+
+## 本地构建
+
 ### 使用 Go 命令
+
 ```bash
+# 在类 Unix 系统（Linux/macOS）上
 go build -o mcp-ip-geo ./cmd/mcp-ip-geo
- 
-go build -o mcp-ip-geo.exe .\cmd\mcp-ip-geo # Windows 系统
+
+# 在 Windows 上
+go build -o mcp-ip-geo.exe .\cmd\mcp-ip-geo
 ```
 
 ### 使用 Docker
-- 1. 构建 Docker 镜像
-  ```bash
-  docker build -t mcp-ip-geo-server .
-  ```
-- 2. 运行 Docker 容器
-  ```bash
-  docker run -d --name mcp-ip-geo-server -p 8000:8000 mcp-ip-geo-server
-  ```
 
-### 远程模式
-使用 Go 安装服务端：
+1. 构建 Docker 镜像：
+
+    ```bash
+    docker build -t mcp-ip-geo-server .
+    ```
+
+2. 运行容器：
+
+    ```bash
+    docker run -d --name mcp-ip-geo-server -p 8000:8000 mcp-ip-geo-server
+    ```
+
+## 安装预编译版本
+
+使用 `Go` 安装最新版本的服务：
+
 ```bash
 go install github.com/chenmingyong0423/mcp-ip-geo/cmd/mcp-ip-geo@latest
 ```
 
-# MCP Server 配置就
-- 本地执行文件
+# MCP 集成
+
+你可以通过以下两种方式集成 `mcp-ip-geo` 服务：
+
+## 🖥 可执行文件集成（本地运行）
 
 ```json
 {
@@ -48,7 +62,7 @@ go install github.com/chenmingyong0423/mcp-ip-geo/cmd/mcp-ip-geo@latest
 }
 ```
 
-- 远程连接
+## 🌐 HTTP 接口集成（连接到已运行的服务）
 
 ```json
 {
