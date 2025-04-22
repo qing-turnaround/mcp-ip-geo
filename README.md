@@ -3,38 +3,54 @@
 </h1>
 
 <div align="center">
-  <a href="./README-zh_CN.md">中文简体</a>
+  <a href="./README-zh_CN.md">简体中文</a>
 </div>
 
 ---
 
-`mcp-ip-geo` is an MCP Server that provides IP geolocation lookup (country, region, city, etc.) via ip-api.com.
+`mcp-ip-geo` is an MCP server that provides IP geolocation lookup (country, region, city, etc.) using the ip-api.com service.
 
-# Build from source
-## Local mode
-### Go Command
+# Building from Source
+
+## Build Locally
+
+### Using Go Command
+
 ```bash
+# On Unix-based systems (Linux/macOS)
 go build -o mcp-ip-geo ./cmd/mcp-ip-geo
- 
-go build -o mcp-ip-geo.exe .\cmd\mcp-ip-geo # windows
+
+# On Windows
+go build -o mcp-ip-geo.exe .\cmd\mcp-ip-geo
 ```
-### Docker
-- 1. Build the Docker image
+
+### Using Docker
+
+1. Build the Docker image:
+
     ```bash
     docker build -t mcp-ip-geo-server .
     ```
-- 2. Run the Docker container
+
+2. Run the Docker container:
+
     ```bash
     docker run -d --name mcp-ip-geo-server -p 8000:8000 mcp-ip-geo-server
     ```
 
-### Remote mode
+## Install Prebuilt Binary
+
 Install the server using Go:
+
 ```bash
- go install github.com/chenmingyong0423/mcp-ip-geo/cmd/mcp-ip-geo@latest
+go install github.com/chenmingyong0423/mcp-ip-geo/cmd/mcp-ip-geo@latest
 ```
-# MCP Server Config
-- Local File
+
+# Integrating with MCP
+
+You can integrate `mcp-ip-geo` with the MCP system in one of the following ways:
+
+## 🖥 Executable Integration (run a local binary)
 
 ```json
 {
@@ -46,7 +62,7 @@ Install the server using Go:
 }
 ```
 
-- `Remote mode`
+## 🌐 HTTP Integration (connect to a running instance via HTTP)
 
 ```json
 {
