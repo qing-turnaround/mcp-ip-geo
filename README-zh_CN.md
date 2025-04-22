@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-  <a href="./README-zh_CN.md">简体中文</a>
+  <a href="./README.md">English</a>
 </div>
 
 ---
