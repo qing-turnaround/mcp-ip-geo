@@ -73,3 +73,8 @@ You can integrate `mcp-ip-geo` in one of the following ways:
   }
 }
 ```
+
+# License
+> ⚠ **Notice**: This project uses the free version of [ip-api.com](https://ip-api.com/), which is **strictly limited to non-commercial use**. If you intend to use this project for commercial purposes, please make sure to comply with their terms of service or purchase a commercial license: [ip-api.com](https://ip-api.com/)
+
+
