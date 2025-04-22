@@ -73,3 +73,6 @@ go install github.com/chenmingyong0423/mcp-ip-geo/cmd/mcp-ip-geo@latest
   }
 }
 ```
+
+# License
+> ⚠ 注意：本项目使用了 ip-api.com 免费版本，其 `API` 服务仅限非商业用途。若您打算将本项目用于商业目的，请务必遵守其服务条款，或购买其付费版本：https://ip-api.com/
