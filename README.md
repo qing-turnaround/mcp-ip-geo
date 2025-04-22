@@ -46,9 +46,9 @@ Install the server using Go:
 go install github.com/chenmingyong0423/mcp-ip-geo/cmd/mcp-ip-geo@latest
 ```
 
-# Integrating with MCP
+# MCP Integration
 
-You can integrate `mcp-ip-geo` with the MCP system in one of the following ways:
+You can integrate `mcp-ip-geo` in one of the following ways:
 
 ## 🖥 Executable Integration (run a local binary)
 
