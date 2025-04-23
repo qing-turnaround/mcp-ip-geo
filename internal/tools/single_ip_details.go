@@ -16,7 +16,7 @@ type ipRequest struct {
 
 func init() {
 	var err error
-	singleIpParserTool, err = protocol.NewTool("ip-parser", "a tool that provides IP geolocation information", ipRequest{})
+	singleIpParserTool, err = protocol.NewTool("ip-details", "a tool that provides IP geolocation information", ipRequest{})
 	if err != nil {
 		panic(err)
 	}
