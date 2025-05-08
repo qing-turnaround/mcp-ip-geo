@@ -16,3 +16,11 @@ type IpApiResponse struct {
 	Org         string  `json:"org"`
 	As          string  `json:"as"`
 }
+
+type TransportProtocol int
+
+const (
+	Stdio TransportProtocol = iota
+	Sse
+	StreamableHttp
+)

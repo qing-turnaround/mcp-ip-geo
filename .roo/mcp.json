@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "test-mcp": {
+      "url": "http://localhost:8080/mcp",
+      "alwaysAllow": [
+        "test-a1",
+        "test-a2",
+        "test-a0"
+      ],
+      "disabled": false
+    }
+  }
+}
